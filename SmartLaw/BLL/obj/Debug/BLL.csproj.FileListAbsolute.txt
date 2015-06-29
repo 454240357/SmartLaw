@@ -1,0 +1,4 @@
+D:\Git\SmartLaw\SmartLaw\SmartLaw\BLL\bin\Debug\SmartLaw.BLL.dll
+D:\Git\SmartLaw\SmartLaw\SmartLaw\BLL\bin\Debug\SmartLaw.BLL.pdb
+D:\Git\SmartLaw\SmartLaw\SmartLaw\BLL\obj\Debug\SmartLaw.BLL.dll
+D:\Git\SmartLaw\SmartLaw\SmartLaw\BLL\obj\Debug\SmartLaw.BLL.pdb
