@@ -1,0 +1,4 @@
+D:\Git\SmartLaw\SmartLaw\SmartLaw\DataSyncService\bin\Debug\SmartLaw.DataSyncService.dll
+D:\Git\SmartLaw\SmartLaw\SmartLaw\DataSyncService\bin\Debug\SmartLaw.DataSyncService.pdb
+D:\Git\SmartLaw\SmartLaw\SmartLaw\DataSyncService\obj\Debug\SmartLaw.DataSyncService.dll
+D:\Git\SmartLaw\SmartLaw\SmartLaw\DataSyncService\obj\Debug\SmartLaw.DataSyncService.pdb

@@ -1,0 +1,4 @@
+D:\Git\SmartLaw\SmartLaw\SmartLaw\DBUtility\bin\Debug\SmartLaw.DBUtility.dll
+D:\Git\SmartLaw\SmartLaw\SmartLaw\DBUtility\bin\Debug\SmartLaw.DBUtility.pdb
+D:\Git\SmartLaw\SmartLaw\SmartLaw\DBUtility\obj\Debug\SmartLaw.DBUtility.dll
+D:\Git\SmartLaw\SmartLaw\SmartLaw\DBUtility\obj\Debug\SmartLaw.DBUtility.pdb
