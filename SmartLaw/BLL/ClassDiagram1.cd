@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SmartLaw.BLL.SYSCODE">
+    <Position X="1.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGYgAQAAAICAAAAAAAAIAAAAAAEAEAAAAAAAAAMAAAI=</HashCode>
+      <FileName>SYSCODE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartLaw.BLL.SYSCODEDETIAL">
+    <Position X="3" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGYgAQAAAICAAAAAAAAIAAAAAAEAEAAAAAAAAAMAAAI=</HashCode>
+      <FileName>SYSCODEDETIAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartLaw.BLL.SysCodeRelation">
+    <Position X="7" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGYgAQAAAICAAAAAAAAIAAAAAAEAEAAAAAAAAAMAAAI=</HashCode>
+      <FileName>SysCodeRelation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartLaw.BLL.SysUser">
+    <Position X="5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGYgAQAAAICAAAAAAAAIAAAAAAEAEAAAAAAAAAMAAAI=</HashCode>
+      <FileName>SysUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

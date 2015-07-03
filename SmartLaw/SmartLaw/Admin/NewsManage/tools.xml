@@ -1,0 +1,15 @@
+﻿<root>
+<tools> 
+  <tool Name="InsertTable"  Text="插入表格"/>
+  <tool Name="ImageManager" Text="插入图片"/> 
+  <tool Name="FontSize" Text="大小"/>
+  <tool Name="Bold" Text="加粗" />
+  <tool Name="Italic"  Text="斜体" />
+  <tool Name="Underline" Text="下划线" />
+  <tool Name="ForeColor" Text="字体颜色"/>
+  <tool Name="JustifyLeft" Text="左对齐"/>
+  <tool Name="JustifyCenter" Text="居中对齐"/>
+  <tool Name="JustifyFull" Text="两端对齐"/>
+  <tool Name="JustifyRight" Text="右对齐"/>
+</tools>
+</root>

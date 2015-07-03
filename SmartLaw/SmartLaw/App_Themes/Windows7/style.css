@@ -1,0 +1,637 @@
+@charset "UTF-8";
+/*
+	****************************
+	***** GuoJun 2006-7-24 *****
+	****************************
+	
+	***************************************************************
+	1. 修改选择器默认属性
+	***************************************************************
+	2. 头部样式
+		2.1 logo
+		2.2 menu
+	***************************************************************
+	3. 主体内容
+		3.1 左边样式
+		3.2 右边样式
+			3.2.1 导航定位
+			3.2.2 表单模板
+			3.2.3 列表模板
+	***************************************************************
+	4. 底部样式
+	***************************************************************
+	5. 特殊页面(登录页面、信息提示页面)
+	***************************************************************
+*/
+/* 
+	*********************************
+	***** 1. 修改选择器默认属性 *****
+	*********************************
+
+body {
+	background-color:#fff;
+}*/
+body, p, form, img, ul {
+	margin:0;
+	padding:0;
+}
+body
+{
+    margin:0 auto; 
+} 
+body, div, p, span, a, input, select, textarea {
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size:12px;
+	/*line-height:120%;*/
+	color:#000;
+}
+/*
+.Button
+{
+	width:95px;
+	min-height:24px;
+	font-size:11px;
+	line-height:22px;
+	border:0;
+	background:url(Image/qsfButton95.gif) no-repeat #a8d1cc;
+}*/
+
+input[type="text"], input[type="password"], input[type="file"], select, textarea {
+	border:1px solid #D5D5D5;
+}
+input[type="text"]:hover, input[type="password"]:hover, input[type="file"]:hover, select:hover, textarea:hover,
+ 	input[type="text"]:focus, input[type="password"]:focus, input[type="file"]:focus, select:focus, textarea:focus {
+	border:1px solid #96D9F9;
+}
+select {
+	width:140px;
+    height: 18px;
+}
+select[type=""] {
+	width:160px;
+}
+textarea[type=""] {
+	border:1px solid #D5D5D5;
+}
+textarea:hover, textarea:focus {
+	border:1px solid #96D9F9;
+}
+a {
+	color:#06c;
+	text-decoration:none;
+}
+a:hover {
+	color: #9932af;
+}
+ul.twoColumn {
+	list-style-type:none;
+	height:25px;
+}
+ul.twoColumn li {
+	float:left; width:400px;
+}
+ul.threeColumn {
+	list-style-type:none;
+}
+ul.threeColumn li {
+	float:left; width:250px; 
+}
+ul.threeColumn label {
+	width:80px; 
+}
+/* 
+	***********************
+	***** 2. 头部样式 *****
+	***********************
+*/
+#header {
+	width:1024px;
+}
+#header_bar {
+	width: 1024px;
+	height: 48px;
+	line-height: 28px;
+	background-image:url('../Windows7/image/header_bg.png');
+    background-repeat:repeat-x;
+}
+
+#logo {
+	float: left;
+	width: 34px;
+	height:34px;
+	margin: 1px;
+	background-image:url('../Windows7/image/logoicon.png');
+	background-repeat:no-repeat;
+	background-position:10px 10px;
+}
+#header_title {
+	float: left;
+	width:500px;
+	height:48px;
+	line-height: 48px;
+	color: #F0F6FF;
+	font-size: 14px;
+	font-weight: bold;
+	text-indent: 5px;
+}
+#operator_info {
+	float:right;
+	width:300px;
+	height:48px;
+	color: #fff;
+	line-height: 48px;
+	text-align: right;
+	padding-right: 16px;
+	font-size: 12px;
+}
+#operator_info a
+{
+    color:#fff;
+    }
+#operator_info a:hover
+{
+    color:red;
+    }
+/* 
+	********************
+	***** 2.1 menu *****
+	********************
+*/
+#header_menu {
+	width: 1024px;
+	height: 26px;
+	line-height: 18px;
+}
+#main_menu
+{
+    color:#fff;
+    }
+.menu
+{
+    z-index:1;
+    color:White;
+}
+
+#user_menu {
+	float: right;
+	width: 130px;
+}
+#user_menu a {
+	float: left;
+	width: 60px;
+}
+#user_menu a:hover {
+}
+/* 
+	***********************
+	***** 3. 主体内容 *****
+	***********************
+*/
+.middle {
+	width:1024px;
+	height:700px;
+}
+/* 
+	************************
+	***** 3.1 左边样式 *****
+	************************
+*/
+#left {
+	float:left;
+	clear:both;
+	width:120px;
+
+	border-right: 1px solid #A7BAC5;
+}
+#left_menu a {
+	display:block;
+}
+#left_menu a.title {
+	font-size: 13px;
+	margin-left: 1px;
+	text-indent:4px;
+	line-height:25px;
+	color:#039;
+	background-image:url('../Windows7/image/menu_title_light.png');
+}
+#left_menu a.title:hover {
+	background-image:url('../Windows7/image/menu_title.png');
+}
+#left_menu a.link {
+	line-height: 20px;
+	text-indent:4px;
+	color: #06c;
+	width: 114px;
+	margin: 0 2px;
+	border: 1px solid #fff;
+}
+#left_menu a.link:hover {
+	background-color: #E1F3FC;
+	border:1px solid #B4E1FA;
+}
+/* 
+	***********************
+	***** 3.2 右边样式 *****
+	***********************
+*/
+#right {
+	float:left;
+	width:858px;
+	overflow: hidden;
+	padding-left: 1px;
+}
+/* 
+	**************************
+	***** 3.2.1 导航定位 *****
+	**************************
+*/
+#position {
+	height:30px;
+	line-height:30px;
+	padding-left:5px;
+	background-image:url('../Windows7/image/menu_title.png');
+	border:solid 1px #CDDAEA;
+	color: #4C6092;
+}
+#position h1 {
+	font-size:14px;
+	font-weight:bold;
+	display:inline;
+}
+#position a {
+	color: #4C6092;
+}
+#position a:hover {
+	color: #839FCE;
+}
+#nav {
+	margin-top:5px;
+	height:30px !important;
+	height:30px;
+}
+#nav a {
+	display:inline;
+	float:left;
+	margin-right:10px;
+	padding:4px 10px;
+	color: #4C607A;
+	border:1px solid #CDDAEA;
+	background-image:url('../Windows7/image/button.png');
+    background-repeat:repeat-x;
+}
+#nav a:hover {
+	color: #0F3789;
+	border:1px solid #CDDAEA;
+	background-image:url('../Windows7/image/button_light.png');
+}
+#nav span {
+	display:inline;
+	float:left;
+	margin-right:10px;
+	padding:4px 10px;
+	color: #4C607A;
+	border:1px solid #CDDAEA;
+	background-image:none;
+    background-color:#E3EEFF;
+}
+#navsub {
+	margin-top:5px;
+	height:25px !important;
+	height:23px;
+}
+#navsub a {
+	display:inline;
+	float:left;
+	margin-right:10px;
+	padding:3px 10px;
+	color: #000;
+	border:1px solid #D5D5D5;
+	background-image:url('../Windows7/image/button_light.png');
+}
+#navsub a:hover {
+	color: #000;
+	border:1px solid #96D9F9;
+	background-image:url('../Windows7/image/button_dark.png');
+}
+#navsub span {
+	display:inline;
+	float:left;
+	margin-right:10px;
+	padding:2px 9px;
+	color: #000;
+	border:2px solid #96D9F9;
+	background-image:url('../Windows7/image/button.png');
+}
+div.tab {
+	margin-top:5px;
+	height:25px !important;
+	height:23px;
+}
+div.tab a {
+	display:inline;
+	float:left;
+	padding:4px 16px;
+	color: #000;
+	border: 1px solid #D5D5D5;
+	background-image:url('../Windows7/image/button_light.png');
+}
+div.tab a:hover {
+	color: #000;
+	border: 1px solid #96D9F9;
+	background-image:url('../Windows7/image/button_dark.png');
+}
+div.tab span {
+	display:inline;
+	float:left;
+	padding:4px 16px;
+	border: 1px solid #96D9F9;
+	background-image:url('../Windows7/image/button.png');
+}
+div.tabsub {
+	margin-top:5px;
+	height:27px !important;
+	height:25px;
+}
+div.tabsub a {
+	display:inline;
+	float:left;
+	margin-right:10px;
+	padding:4px 10px;
+	color: #000;
+	border:1px solid #D5D5D5;
+	background-image:url('../Windows7/image/button_light.png');
+}
+div.tabsub a:hover {
+	color: #000;
+	border:1px solid #96D9F9;
+	background-image:url('../Windows7/image/button_dark.png');
+}
+div.tabsub span {
+	display:inline;
+	/*float:left;*/
+	margin-right:10px;
+	padding:3px 10px;
+	color: #839FCE;
+	border:2px solid #839FCE;
+	background-image:url('../Windows7/image/button.png');
+}
+/* 
+	**************************
+	***** 3.2.2 表单模板 *****
+	**************************
+*/
+.form {
+	margin-top:3px;	
+}
+fieldset
+{
+    border:1px solid #D5DDEC;
+    }
+.form fieldset {
+	border:1px solid #D5DDEC;
+	padding:10px 5px;
+	clear:both;
+	/*width:838px;*/
+}
+
+.form table{
+    border:solid 1px #D5DDEC;
+    border-top:none 0px;
+    }
+    
+.form label {
+	float:left;
+	width:100px;
+	text-align:right;
+	display:inline;
+}
+
+.form div {
+
+	margin-bottom:2px;
+	line-height:23px;
+}
+
+span.tip {
+	color:Red;
+	margin:0 2px;
+}
+span.ErrTip {
+	color:#f00;
+	text-decoration:underline;
+}
+span.OkTip {
+	color:#f00;
+}
+/* 
+	**************************
+	***** 3.2.3 列表模板 *****
+	**************************
+*/
+#list {
+	margin-top:3px;
+	margin-bottom:3px;
+	width:713px;
+}
+#list ul {
+	list-style-type:none;
+}
+#list1 {
+	width:713px;
+}
+#list1 ul {
+	list-style-type:none;
+}
+#list2 {
+	width:713px;
+}
+#list2 ul {
+	list-style-type:none;
+}
+#list3 {
+	margin-top:3px;
+	margin-bottom:3px;
+	width:800px;
+}
+#list3 ul {
+	list-style-type:none;
+}
+.listScroll {
+}
+ul.list0 {
+	width:400px;
+}
+ul.list1 {
+	width:500px;
+}
+ul.list2 {
+	width:600px;
+}
+ul.list3 {
+	width:700px;
+}
+ul.list4 {
+	width:800px;
+}
+ul.list5 {
+	width:900px;
+}
+ ul.list6 {
+	width:1000px;
+}
+ul.list7 {
+	width:1100px;
+} 
+ul li ul li {
+	float:none;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	word-break:keep-all;
+	white-space:nowrap;
+}
+.listtop {
+	/*color: #036;*/
+	text-align:center;
+	background-image:url('../Windows7/image/selected.png');
+	border-bottom: 1px solid #B0BFDE;
+	height:23px;
+	line-height:23px;
+	clear:both;
+	list-style-type:none;
+}
+.listend {
+	line-height:30px;
+	text-align:center;
+	clear:both;
+}
+.listOP {
+	line-height:30px;
+	text-align:center;
+	clear:both;
+	list-style-type:none
+}
+.odd {
+	background-color:#fff;
+	height:21px;
+	line-height:21px;
+	clear:both;
+	list-style-type:none;
+	text-align:center
+}
+.even {
+	/*background-color:#EEF8FD;*/
+	background-image:url('../Windows7/image/selected_light.png');
+	clear:both;
+	list-style-type:none;
+}
+.half{
+	width:20px	
+}
+.one {
+	width:40px;
+}
+.two {
+	width:80px;
+}
+.two_half {
+	width:100px;
+}
+.three {
+	width:120px;
+}
+.three_half {
+	width:140px;
+}
+.four {
+	width:160px;
+}
+.five {
+	width:200px;
+}
+.six {
+	width:240px;
+}
+.seven {
+	width:280px;
+}
+.eight {
+	width:320px;
+}
+.nine {
+	width:360px;
+}
+.nine_half {
+	width:380px;
+}
+.ten {
+	width:400px;
+}
+.delete {
+	text-align:center;
+	width:600px;
+}
+/* 
+	***********************
+	***** 4. 底部样式 *****
+	***********************
+*/
+#footer {
+	width:900px;
+	height:50px;
+	margin-top: 10px;
+	margin-left: 40px;
+	clear:both;
+	border-top: 1px solid #666;
+	text-align: center;
+	
+}
+/* 
+	*********************************************
+	***** 5. 其他样式 *****
+	*********************************************
+*/
+.remind {
+	color: #f00;
+}
+.memoStyle {
+	float:left;
+}
+div.formStyle {
+	margin:0;
+	padding:0;
+	margin-top:3px;
+}
+div.formStyle fieldset {
+	border:1px solid #D5DDEC;
+	padding:10px 5px;
+	clear:both;
+	width:838px;
+}
+div.formStyle label {
+	float:left;
+	width:100px;
+	text-align:right;
+	display:inline;
+}
+div.formStyle div {
+	clear:both;
+	margin-bottom:2px;
+	line-height:23px;
+}
+div.box{	
+	border:1px solid #ccc;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	padding:10px 5px;
+	clear:both;
+	width:838px;
+}
+.btnCalendar {
+	border-style: none;
+    border-color: inherit;
+    border-width: 0px;
+    cursor: hand;
+	    width: 16px;
+	    height: 16px;
+	background-image:url('../Windows7/image/cal_icon.gif');
+}

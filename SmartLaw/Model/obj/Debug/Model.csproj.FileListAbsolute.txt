@@ -1,0 +1,4 @@
+D:\Git\SmartLaw\SmartLaw\SmartLaw\Model\bin\Debug\Model.dll
+D:\Git\SmartLaw\SmartLaw\SmartLaw\Model\bin\Debug\Model.pdb
+D:\Git\SmartLaw\SmartLaw\SmartLaw\Model\obj\Debug\Model.dll
+D:\Git\SmartLaw\SmartLaw\SmartLaw\Model\obj\Debug\Model.pdb

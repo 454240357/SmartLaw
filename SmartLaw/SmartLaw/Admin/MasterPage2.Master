@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage2.Master.cs" Inherits="SmartLaw.Admin.MasterPage2" %>
+<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+<%@ Register src="MainMenu.ascx" tagname="MainMenu" tagprefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+<%--    <telerik:RadStyleSheetManager id="RadStyleSheetManager1" runat="server" />--%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="width:1024px">
+    <form id="form1" runat="server">
+    <telerik:RadScriptManager ID="RadScriptManager1" runat="server" EnablePartialRendering="true" AsyncPostBackTimeout="36000">
+	</telerik:RadScriptManager>
+	<script type="text/javascript">
+	    //Put your JavaScript code here.
+    </script>
+     <telerik:RadFormDecorator ID="QsfFromDecorator" runat="server" DecoratedControls="All"  />
+     <telerik:radwindowmanager runat="server" RestrictionZoneID="offsetElement" ID="RadWindowManager1">
+        <Windows>
+            <telerik:RadWindow ID="SubModalWindow" runat="server" AutoSize="false"
+              ReloadOnShow="true" ShowContentDuringLoad="false" Modal="true"/>
+            <telerik:RadWindow ID="SubWindow" runat="server" AutoSize="false"
+              ReloadOnShow="true" ShowContentDuringLoad="false" Modal="false"/>
+        </Windows>
+        <Localization OK="好的" Cancel="取消" Close="关闭" Maximize="最大化" Minimize="最小化" Reload="刷新" Restore="还原" PinOn="固定" PinOff="解除固定" Yes="是" No="否" />
+     </telerik:radwindowmanager>
+    <div id="header">
+	<div id="header_bar">
+		<div id="logo">&nbsp;</div>
+		<div id="header_title"><%=titlestr %></div>
+		<div id="operator_info">
+            <asp:Literal ID="Literal1" runat="server" Text="欢迎您"></asp:Literal>
+            <a ID="UserId" href="#" onclick="openRadWindow( '<%= getUserInfo() %>', 'SubModalWindow'); return false;"><%= getUserName()%> </a>
+            <asp:Literal ID="Ltr_OperatorInfo" runat="server" ></asp:Literal>|
+            <%--<a href="#" onclick="openRadWindow('/NDTVIntergrateNetManager.Web/SystemManage/SysUserDetail.aspx?LoginId=<%=LoginId %>', 'SubWindow'); return false;">[修改密码]</a>--%>
+			<asp:LinkButton ID="LB_Logout" runat="server" onclick="LB_Logout_Click" 
+                OnClientClick="return blockConfirm('真的要注销吗？', event, 330, 100,'','九峰山智慧社区管理平台');" 
+                CausesValidation="False">[注销]</asp:LinkButton>
+		</div>
+	</div>
+	<div id="header_menu">
+		<div id="main_menu">
+		    <uc1:MainMenu ID="MainMenu1" runat="server" />
+		</div>
+	</div>
+    </div>
+    <telerik:RadSplitter id="RadSplitter1" runat="server">
+                <telerik:RadPane id="navigationPane" runat="server" Width="150px"  >
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </telerik:RadPane>
+                <telerik:RadSplitBar id="RadSplitbar1" runat="server" CollapseMode="Forward" CollapseExpandPaneText="折叠/展开 左侧菜单栏"></telerik:RadSplitBar>
+                <telerik:RadPane id="contentPane" runat="server" scrolling="Y">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                </telerik:RadPane>
+    </telerik:RadSplitter>
+
+    </form>
+    <script language="javascript" type="text/javascript">
+        Sys.Application.add_load(
+             function () {
+                 var form = Sys.WebForms.PageRequestManager.getInstance()._form;
+                 form._initialAction = form.action = window.location.href;
+             }
+         );
+    </script>
+</body>
+</html>
