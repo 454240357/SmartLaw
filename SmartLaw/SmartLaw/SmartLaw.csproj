@@ -244,7 +244,13 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <Content Include="test.aspx" />
+<<<<<<< HEAD
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+=======
     <Content Include="Web.config" />
+>>>>>>> master
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

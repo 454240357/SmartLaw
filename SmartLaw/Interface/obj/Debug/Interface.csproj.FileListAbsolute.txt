@@ -23,6 +23,8 @@ D:\Git\SmartLaw\SmartLaw\SmartLaw\Interface\bin\SmartLaw.Interface.dll
 D:\Git\SmartLaw\SmartLaw\SmartLaw\Interface\bin\SmartLaw.Interface.pdb
 D:\Git\SmartLaw\SmartLaw\SmartLaw\Interface\obj\Debug\SmartLaw.Interface.dll
 D:\Git\SmartLaw\SmartLaw\SmartLaw\Interface\obj\Debug\SmartLaw.Interface.pdb
+<<<<<<< HEAD
+=======
 C:\WorkSpace\SmartLaw\SmartLaw\Interface\bin\SmartLaw.Interface.dll
 C:\WorkSpace\SmartLaw\SmartLaw\Interface\bin\SmartLaw.Interface.pdb
 C:\WorkSpace\SmartLaw\SmartLaw\Interface\bin\LTP.Accounts.dll
@@ -48,3 +50,4 @@ C:\WorkSpace\SmartLaw\SmartLaw\Interface\bin\SmartLaw.DBUtility.pdb
 C:\WorkSpace\SmartLaw\SmartLaw\Interface\obj\Debug\Interface.csprojResolveAssemblyReference.cache
 C:\WorkSpace\SmartLaw\SmartLaw\Interface\obj\Debug\SmartLaw.Interface.dll
 C:\WorkSpace\SmartLaw\SmartLaw\Interface\obj\Debug\SmartLaw.Interface.pdb
+>>>>>>> master
