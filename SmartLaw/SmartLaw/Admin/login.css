@@ -1,0 +1,164 @@
+@charset "UTF-8";
+html
+{
+    font-family:verdana, arial, helvetica, sans-serif;
+	font-size:12px;
+	color:#000;
+    }
+body {
+	background-color: #D4E6EC;
+	background-image:url('images/bcolor.jpg');
+	background-repeat:repeat-x;
+	margin:0px;
+	padding:0px;
+}
+
+#main {
+	width:1024px;
+	height:750px;
+	background-color:#fff;
+	background-image:url('images/bg.jpg');
+    margin:0 auto;
+}
+.control
+{
+    position:absolute;
+    margin-left:336px;
+    margin-top:244px;
+    padding-left:0px;
+    width:353px;
+    height:232px;
+    border:none 0px;
+    }
+    
+input.loginName
+{
+    position:absolute;
+    left:112px;
+    top:65px;
+    width:190px;
+    height:19px;
+    border:none 0px ;
+    background:transparent;
+    color:#476179;
+    }
+    
+input.password
+{
+    position:absolute;
+    left:112px;
+    top:110px;
+    width:190px;
+    height:19px;
+    border:none 0px ;
+    background:transparent;
+    color:#476179;
+    }
+    
+.remember
+{
+    position:absolute;
+    left:106px;
+    top:145px;
+    color:#476179;
+    }
+input.close
+{
+    position:absolute;
+    width:15px;
+    height:15px;
+    border:none 0px;
+    left:326px;
+    top:12px;
+    background:transparent;
+    color:#476179;
+    cursor:pointer;
+    } 
+.title
+{
+    position:absolute;
+    border:none 0px;
+    left:60px;
+    top:12px;
+    background:transparent;
+    color:#476179;
+    font-size:12px;
+    font-weight:bold;
+    } 
+input.login
+{
+    position:absolute;
+    width:63px;
+    height:32px;
+    left:108px;
+    top:188px;
+    background:transparent;
+    color:#476179;
+    border:none 0px;
+    cursor:pointer;
+    }
+    
+input.cancel
+{
+    position:absolute;
+    width:63px;
+    height:32px;
+    left:184px;
+    top:188px;
+    background:transparent;
+    color:#476179;
+    border:none 0px;
+    cursor:pointer;
+    }
+.error1
+{
+    position:absolute;
+    left:112px;
+    top:86px;
+    right: 145px;
+}
+.error2
+{
+    position:absolute;
+    left:112px;
+    top:131px;
+    right: 145px;
+}  
+div#mainright {
+	width:450px;
+	height:300px;
+	border-left: 1px solid #016EA7;
+	padding-left: 60px;
+}
+div#righttitle {
+	height: 36px;
+	font-size: 24px;
+	font-family: 黑体;
+}
+div.input {
+	height: 26px;
+}
+select {
+	width: 160px
+}
+.input {
+	width: 160px;
+	height: 18px;
+	border: 1px solid #999;
+}
+.buttonSubmit {
+	color: #fff;
+	background-color: #016EA7;
+	border: 1px solid #999;
+	width: 80px;
+	height: 24px;
+}
+div#foot {
+	text-align: center;
+	background-image: url(images/foot.jpg);
+	background-repeat: no-repeat;
+	height: 52px;
+}
+hr#foot_hr {
+	width: 98%;
+}

@@ -1,0 +1,100 @@
+﻿<%--
+默认的外观模板。以下外观仅作为示例提供。
+
+1. 命名的控件外观。SkinId 的定义应唯一，因为在同一主题中不允许一个控件类型有重复的 SkinId。
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. 默认外观。未定义 SkinId。在同一主题中每个控件类型只允许有一个默认的控件外观。
+    <AlternatingItemStyle  CssClass="even"/>
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+<asp:GridView runat="server" ForeColor="#333333" GridLines="None" Width="100%">
+    <RowStyle CssClass="odd"/>
+    <HeaderStyle  CssClass="listtop" />
+    <AlternatingRowStyle  CssClass="even"/>
+</asp:GridView>
+
+<telerik:RadGrid runat="server" Width="99.7%"  Skin="Forest">
+
+</telerik:RadGrid>
+
+<telerik:RadTreeList runat="server" Skin="Forest">
+</telerik:RadTreeList>
+
+<telerik:RadTreeView runat="server" Skin="Forest">
+</telerik:RadTreeView>
+
+<telerik:RadDropDownTree runat="server" Skin="Forest" Width="135px">
+</telerik:RadDropDownTree>
+
+<telerik:RadEditor runat="server" Skin="Forest" width="700px" style="margin-left:40px;">
+</telerik:RadEditor>
+
+<telerik:RadEditor runat="server" Skin="Forest" SkinID="RadEditor2" width="700px" style="margin-left:100px;">
+</telerik:RadEditor>
+
+
+<telerik:RadTreeViewContextMenu runat="server" Skin="Forest">
+</telerik:RadTreeViewContextMenu>
+
+<telerik:RadComboBox runat="server" Skin="Forest" Width="140px">
+</telerik:RadComboBox>
+
+<telerik:RadWindowManager runat="server" Skin="Forest">
+</telerik:RadWindowManager>
+
+<telerik:RadAjaxLoadingPanel runat="server" Skin="Forest" BackgroundPosition="Center" />
+
+<telerik:RadMaskedTextBox runat="server" Skin="Forest" Width="135px">
+</telerik:RadMaskedTextBox> 
+
+<telerik:RadTextBox runat="server" Skin="Forest" Width="135px">
+</telerik:RadTextBox>
+
+<telerik:RadTextBox runat="server" SkinID="SmallTextBox" Skin="Forest" Width="40px">
+</telerik:RadTextBox>
+
+<telerik:RadTextBox runat="server" SkinID="BigTextBox" Skin="Forest" Width="280px">
+</telerik:RadTextBox> 
+
+
+<telerik:RadTextBox runat="server" SkinID="BigTextBox2"  Width="300px" Skin="Forest">
+</telerik:RadTextBox> 
+
+<telerik:RadTextBox runat="server" SkinID="NewsTextBox"  Width="700px" Skin="Forest">
+</telerik:RadTextBox> 
+
+<telerik:RadTextBox runat="server" SkinID="QaBox"  Width="550px" Skin="Forest"> 
+</telerik:RadTextBox>
+
+<telerik:RadTextBox runat="server" SkinID="QaBox2"  Width="600px" Skin="Forest"> 
+</telerik:RadTextBox>
+
+<telerik:RadTextBox runat="server" SkinID="SimTextBox"  Width="400px" Skin="Forest"> 
+</telerik:RadTextBox>
+
+<telerik:RadNumericTextBox runat="server" SkinID="NormalNumericTextBox" Skin="Forest" Width="155px">
+</telerik:RadNumericTextBox>
+
+<telerik:RadNumericTextBox runat="server" SkinID="SmallNumericTextBox" Skin="Forest" Width="60px">
+</telerik:RadNumericTextBox>
+
+<telerik:RadTabStrip runat="server" Skin="Forest">
+</telerik:RadTabStrip>
+
+<telerik:RadListBox runat="server" Skin="Forest"/>
+
+<telerik:RadSplitter runat="server" Skin="Forest" Width="1024px" Height="750px" />
+
+<telerik:RadPanelBar runat="server" Skin="Forest"/>
+
+<telerik:RadMenu runat="server" Skin="Forest" CssClass="menu" Width="100%"/>
+
+<telerik:RadFormDecorator runat="server"  DecoratedControls="Buttons, Scrollbars" Skin="Forest">
+</telerik:RadFormDecorator>	
+<telerik:RadDatePicker runat="server" Skin="Forest"/> 
