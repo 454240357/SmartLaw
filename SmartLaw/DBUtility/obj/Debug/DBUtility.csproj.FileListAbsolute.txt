@@ -6,3 +6,14 @@ D:\Git\SmartLaw\SmartLaw\SmartLaw\DBUtility\bin\Debug\MySql.Data.dll
 D:\Git\SmartLaw\SmartLaw\SmartLaw\DBUtility\obj\Debug\SmartLaw.DBUtility.dll
 D:\Git\SmartLaw\SmartLaw\SmartLaw\DBUtility\obj\Debug\SmartLaw.DBUtility.pdb
 D:\Git\SmartLaw\SmartLaw\SmartLaw\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
+=======
+C:\WorkSpace\SmartLaw\SmartLaw\DBUtility\bin\Debug\SmartLaw.DBUtility.dll
+C:\WorkSpace\SmartLaw\SmartLaw\DBUtility\bin\Debug\SmartLaw.DBUtility.pdb
+C:\WorkSpace\SmartLaw\SmartLaw\DBUtility\bin\Debug\IBatisNet.Common.dll
+C:\WorkSpace\SmartLaw\SmartLaw\DBUtility\bin\Debug\IBatisNet.DataMapper.dll
+C:\WorkSpace\SmartLaw\SmartLaw\DBUtility\bin\Debug\MySql.Data.dll
+C:\WorkSpace\SmartLaw\SmartLaw\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+C:\WorkSpace\SmartLaw\SmartLaw\DBUtility\obj\Debug\SmartLaw.DBUtility.dll
+C:\WorkSpace\SmartLaw\SmartLaw\DBUtility\obj\Debug\SmartLaw.DBUtility.pdb
+>>>>>>> master
