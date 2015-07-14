@@ -6,7 +6,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{92074B15-C01E-42AB-8869-F05607450864}</ProjectGuid>
+    <ProjectGuid>{5D79B177-6C93-430D-8990-93C2AAD07D27}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -32,7 +32,34 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\Lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="LTP.Accounts">
+      <HintPath>..\Lib\LTP.Accounts.dll</HintPath>
+    </Reference>
+    <Reference Include="LtpPageControl">
+      <HintPath>..\Lib\LtpPageControl.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>..\Lib\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\Lib\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.UI.WebControls">
+      <HintPath>..\Lib\Microsoft.Web.UI.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB">
+      <HintPath>..\Lib\MongoDB.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -48,19 +75,651 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\Lib\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins">
+      <HintPath>..\Lib\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web.config" />
+    <Content Include="Admin\CategoryManage\AddCategory.aspx" />
+    <Content Include="Admin\CategoryManage\CategoryDetail.aspx" />
+    <Content Include="Admin\CategoryManage\CategoryView.aspx" />
+    <Content Include="Admin\CategoryManage\LeftMenu.ascx" />
+    <Content Include="Admin\EndUserManage\AddEndUser.aspx" />
+    <Content Include="Admin\EndUserManage\EndUserDetail.aspx" />
+    <Content Include="Admin\EndUserManage\EndUserList.aspx" />
+    <Content Include="Admin\EndUserManage\LeftMenu.ascx" />
+    <Content Include="Admin\images\bcolor.jpg" />
+    <Content Include="Admin\images\bg.jpg" />
+    <Content Include="Admin\images\logoicon.gif" />
+    <Content Include="Admin\images\logoicon.png" />
+    <Content Include="Admin\IntegralManage\GiftDetail.aspx" />
+    <Content Include="Admin\IntegralManage\GiftEdit.aspx" />
+    <Content Include="Admin\IntegralManage\GiftList.aspx" />
+    <Content Include="Admin\IntegralManage\IntegralConfiguration.aspx" />
+    <Content Include="Admin\IntegralManage\IntegralDetail.aspx" />
+    <Content Include="Admin\IntegralManage\IntegralExchangeRecords.aspx" />
+    <Content Include="Admin\IntegralManage\IntegralList.aspx" />
+    <Content Include="Admin\IntegralManage\LeftMenu.ascx" />
+    <Content Include="Admin\js\floatlayer.js" />
+    <Content Include="Admin\js\jquery-1.2.6-vsdoc-cn.js" />
+    <Content Include="Admin\js\RadScript.js" />
+    <Content Include="Admin\Login.aspx" />
+    <Content Include="Admin\login.css" />
+    <Content Include="Admin\LogManage\LeftMenu.ascx" />
+    <Content Include="Admin\LogManage\LogDetail.aspx" />
+    <Content Include="Admin\LogManage\LogList.aspx" />
+    <Content Include="Admin\MainMenu.ascx" />
+    <Content Include="Admin\NewsManage\EditorDialogs\FileBrowser.ascx" />
+    <Content Include="Admin\NewsManage\LeftMenu.ascx" />
+    <Content Include="Admin\NewsManage\NewsCheck.aspx" />
+    <Content Include="Admin\NewsManage\NewsDetail.aspx" />
+    <Content Include="Admin\NewsManage\NewsEdit.aspx" />
+    <Content Include="Admin\NewsManage\NewsList.aspx" />
+    <Content Include="Admin\NewsManage\tools.xml" />
+    <Content Include="Admin\NewsManage\UserControl.ascx" />
+    <Content Include="Admin\NoticeManage\EditorDialogs\FileBrowser.ascx" />
+    <Content Include="Admin\NoticeManage\LeftMenu.ascx" />
+    <Content Include="Admin\NoticeManage\NoticeDetail.aspx" />
+    <Content Include="Admin\NoticeManage\NoticeEdit.aspx" />
+    <Content Include="Admin\NoticeManage\NoticeList.aspx" />
+    <Content Include="Admin\NoticeManage\tools.xml" />
+    <Content Include="Admin\NoticeManage\UserControl.ascx" />
+    <Content Include="Admin\QuestionnaireManage\LeftMenu.ascx" />
+    <Content Include="Admin\QuestionnaireManage\QuestionnaireAccount.aspx" />
+    <Content Include="Admin\QuestionnaireManage\QuestionnaireDetail.aspx" />
+    <Content Include="Admin\QuestionnaireManage\QuestionnaireEdit.aspx" />
+    <Content Include="Admin\QuestionnaireManage\QuestionnaireList.aspx" />
+    <Content Include="Admin\SystemManage\AddSubSysCode.aspx" />
+    <Content Include="Admin\SystemManage\AddSubSysCodeRelation.aspx" />
+    <Content Include="Admin\SystemManage\AddSysCode.aspx" />
+    <Content Include="Admin\SystemManage\AddSysUser.aspx" />
+    <Content Include="Admin\SystemManage\LeftMenu.ascx" />
+    <Content Include="Admin\SystemManage\SubSysCodeDetail.aspx" />
+    <Content Include="Admin\SystemManage\SubSysCodeList.aspx" />
+    <Content Include="Admin\SystemManage\SubSysCodeRelationList.aspx" />
+    <Content Include="Admin\SystemManage\SysCodeDetail.aspx" />
+    <Content Include="Admin\SystemManage\SysCodeList.aspx" />
+    <Content Include="Admin\SystemManage\SysUserDetail.aspx" />
+    <Content Include="Admin\SystemManage\SysUserList.aspx" />
+    <Content Include="Admin\UserBehaviorManage\LeftMenu.ascx" />
+    <Content Include="Admin\UserBehaviorManage\UserBehaviorDetail.aspx" />
+    <Content Include="Admin\UserBehaviorManage\UserBehaviorStatistics.aspx" />
+    <Content Include="App_Data\RadCaptcha\0.wav" />
+    <Content Include="App_Data\RadCaptcha\1.wav" />
+    <Content Include="App_Data\RadCaptcha\2.wav" />
+    <Content Include="App_Data\RadCaptcha\3.wav" />
+    <Content Include="App_Data\RadCaptcha\4.wav" />
+    <Content Include="App_Data\RadCaptcha\5.wav" />
+    <Content Include="App_Data\RadCaptcha\6.wav" />
+    <Content Include="App_Data\RadCaptcha\7.wav" />
+    <Content Include="App_Data\RadCaptcha\8.wav" />
+    <Content Include="App_Data\RadCaptcha\9.wav" />
+    <Content Include="App_Data\RadCaptcha\A.wav" />
+    <Content Include="App_Data\RadCaptcha\B.wav" />
+    <Content Include="App_Data\RadCaptcha\C.wav" />
+    <Content Include="App_Data\RadCaptcha\D.wav" />
+    <Content Include="App_Data\RadCaptcha\E.wav" />
+    <Content Include="App_Data\RadCaptcha\F.wav" />
+    <Content Include="App_Data\RadCaptcha\G.wav" />
+    <Content Include="App_Data\RadCaptcha\H.wav" />
+    <Content Include="App_Data\RadCaptcha\I.wav" />
+    <Content Include="App_Data\RadCaptcha\J.wav" />
+    <Content Include="App_Data\RadCaptcha\K.wav" />
+    <Content Include="App_Data\RadCaptcha\L.wav" />
+    <Content Include="App_Data\RadCaptcha\M.wav" />
+    <Content Include="App_Data\RadCaptcha\N.wav" />
+    <Content Include="App_Data\RadCaptcha\O.wav" />
+    <Content Include="App_Data\RadCaptcha\P.wav" />
+    <Content Include="App_Data\RadCaptcha\Q.wav" />
+    <Content Include="App_Data\RadCaptcha\R.wav" />
+    <Content Include="App_Data\RadCaptcha\S.wav" />
+    <Content Include="App_Data\RadCaptcha\T.wav" />
+    <Content Include="App_Data\RadCaptcha\U.wav" />
+    <Content Include="App_Data\RadCaptcha\V.wav" />
+    <Content Include="App_Data\RadCaptcha\W.wav" />
+    <Content Include="App_Data\RadCaptcha\X.wav" />
+    <Content Include="App_Data\RadCaptcha\Y.wav" />
+    <Content Include="App_Data\RadCaptcha\Z.wav" />
+    <Content Include="App_Themes\Black\Black.css" />
+    <Content Include="App_Themes\Black\Image\button.png" />
+    <Content Include="App_Themes\Black\Image\button_dark.png" />
+    <Content Include="App_Themes\Black\Image\button_light.png" />
+    <Content Include="App_Themes\Black\Image\foot.jpg" />
+    <Content Include="App_Themes\Black\Image\header_bg.png" />
+    <Content Include="App_Themes\Black\Image\logoicon.gif" />
+    <Content Include="App_Themes\Black\Image\logoicon.png" />
+    <Content Include="App_Themes\Black\Image\main_menu.png" />
+    <Content Include="App_Themes\Black\Image\main_menu_hover.png" />
+    <Content Include="App_Themes\Black\Image\menu_title.png" />
+    <Content Include="App_Themes\Black\Image\menu_title_light.png" />
+    <Content Include="App_Themes\Black\Image\qsfButton95.gif" />
+    <Content Include="App_Themes\Black\Image\selected.png" />
+    <Content Include="App_Themes\Black\Image\selected_light.png" />
+    <Content Include="App_Themes\Forest\Forest.css" />
+    <Content Include="App_Themes\Forest\Image\button.png" />
+    <Content Include="App_Themes\Forest\Image\button_dark.png" />
+    <Content Include="App_Themes\Forest\Image\button_light.png" />
+    <Content Include="App_Themes\Forest\Image\foot.jpg" />
+    <Content Include="App_Themes\Forest\Image\header_bg.png" />
+    <Content Include="App_Themes\Forest\Image\logoicon.gif" />
+    <Content Include="App_Themes\Forest\Image\logoicon.png" />
+    <Content Include="App_Themes\Forest\Image\main_menu.png" />
+    <Content Include="App_Themes\Forest\Image\main_menu_hover.png" />
+    <Content Include="App_Themes\Forest\Image\menu_title.png" />
+    <Content Include="App_Themes\Forest\Image\menu_title_light.png" />
+    <Content Include="App_Themes\Forest\Image\qsfButton95.gif" />
+    <Content Include="App_Themes\Forest\Image\selected.png" />
+    <Content Include="App_Themes\Forest\Image\selected_light.png" />
+    <Content Include="App_Themes\Forest\Image\wait.gif" />
+    <Content Include="App_Themes\Metro\Image\button.png" />
+    <Content Include="App_Themes\Metro\Image\button_dark.png" />
+    <Content Include="App_Themes\Metro\Image\button_light.png" />
+    <Content Include="App_Themes\Metro\Image\header_bg.png" />
+    <Content Include="App_Themes\Metro\Image\logoicon.gif" />
+    <Content Include="App_Themes\Metro\Image\logoicon.png" />
+    <Content Include="App_Themes\Metro\Image\menu_title.png" />
+    <Content Include="App_Themes\Metro\Image\menu_title_light.png" />
+    <Content Include="App_Themes\Metro\Image\selected.png" />
+    <Content Include="App_Themes\Metro\Image\selected_light.png" />
+    <Content Include="App_Themes\Metro\style.css" />
+    <Content Include="App_Themes\Windows7\Image\button.png" />
+    <Content Include="App_Themes\Windows7\Image\button_dark.png" />
+    <Content Include="App_Themes\Windows7\Image\button_light.png" />
+    <Content Include="App_Themes\Windows7\Image\header_bg.png" />
+    <Content Include="App_Themes\Windows7\Image\logoicon.gif" />
+    <Content Include="App_Themes\Windows7\Image\logoicon.png" />
+    <Content Include="App_Themes\Windows7\Image\menu_title.png" />
+    <Content Include="App_Themes\Windows7\Image\menu_title_light.png" />
+    <Content Include="App_Themes\Windows7\Image\selected.png" />
+    <Content Include="App_Themes\Windows7\Image\selected_light.png" />
+    <Content Include="App_Themes\Windows7\style.css" />
+    <None Include="Service References\MongoDBService\MongoDBService.disco" />
+    <None Include="Service References\MongoDBService\configuration91.svcinfo" />
+    <None Include="Service References\MongoDBService\configuration.svcinfo" />
+    <None Include="Service References\MongoDBService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="test.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <None Include="Service References\MongoDBService\MongoDBService.wsdl" />
+    <None Include="Service References\MongoDBService\SmartLaw.MongoDBService.EndUser.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\CategoryManage\AddCategory.aspx.cs">
+      <DependentUpon>AddCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CategoryManage\AddCategory.aspx.designer.cs">
+      <DependentUpon>AddCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CategoryManage\CategoryDetail.aspx.cs">
+      <DependentUpon>CategoryDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CategoryManage\CategoryDetail.aspx.designer.cs">
+      <DependentUpon>CategoryDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CategoryManage\CategoryView.aspx.cs">
+      <DependentUpon>CategoryView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CategoryManage\CategoryView.aspx.designer.cs">
+      <DependentUpon>CategoryView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CategoryManage\LeftMenu.ascx.cs">
+      <DependentUpon>LeftMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CategoryManage\LeftMenu.ascx.designer.cs">
+      <DependentUpon>LeftMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EndUserManage\AddEndUser.aspx.cs">
+      <DependentUpon>AddEndUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EndUserManage\AddEndUser.aspx.designer.cs">
+      <DependentUpon>AddEndUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EndUserManage\EndUserDetail.aspx.cs">
+      <DependentUpon>EndUserDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EndUserManage\EndUserDetail.aspx.designer.cs">
+      <DependentUpon>EndUserDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EndUserManage\EndUserList.aspx.cs">
+      <DependentUpon>EndUserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EndUserManage\EndUserList.aspx.designer.cs">
+      <DependentUpon>EndUserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EndUserManage\LeftMenu.ascx.cs">
+      <DependentUpon>LeftMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EndUserManage\LeftMenu.ascx.designer.cs">
+      <DependentUpon>LeftMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\IntegralManage\GiftDetail.aspx.cs">
+      <DependentUpon>GiftDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\IntegralManage\GiftDetail.aspx.designer.cs">
+      <DependentUpon>GiftDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\IntegralManage\GiftEdit.aspx.cs">
+      <DependentUpon>GiftEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\IntegralManage\GiftEdit.aspx.designer.cs">
+      <DependentUpon>GiftEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\IntegralManage\GiftList.aspx.cs">
+      <DependentUpon>GiftList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\IntegralManage\GiftList.aspx.designer.cs">
+      <DependentUpon>GiftList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\IntegralManage\IntegralConfiguration.aspx.cs">
+      <DependentUpon>IntegralConfiguration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\IntegralManage\IntegralConfiguration.aspx.designer.cs">
+      <DependentUpon>IntegralConfiguration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\IntegralManage\IntegralDetail.aspx.cs">
+      <DependentUpon>IntegralDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\IntegralManage\IntegralDetail.aspx.designer.cs">
+      <DependentUpon>IntegralDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\IntegralManage\IntegralExchangeRecords.aspx.cs">
+      <DependentUpon>IntegralExchangeRecords.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\IntegralManage\IntegralExchangeRecords.aspx.designer.cs">
+      <DependentUpon>IntegralExchangeRecords.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\IntegralManage\IntegralList.aspx.cs">
+      <DependentUpon>IntegralList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\IntegralManage\IntegralList.aspx.designer.cs">
+      <DependentUpon>IntegralList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\IntegralManage\LeftMenu.ascx.cs">
+      <DependentUpon>LeftMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\IntegralManage\LeftMenu.ascx.designer.cs">
+      <DependentUpon>LeftMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\LogManage\LeftMenu.ascx.cs">
+      <DependentUpon>LeftMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\LogManage\LeftMenu.ascx.designer.cs">
+      <DependentUpon>LeftMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\LogManage\LogDetail.aspx.cs">
+      <DependentUpon>LogDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\LogManage\LogDetail.aspx.designer.cs">
+      <DependentUpon>LogDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\LogManage\LogList.aspx.cs">
+      <DependentUpon>LogList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\LogManage\LogList.aspx.designer.cs">
+      <DependentUpon>LogList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MainMenu.ascx.cs">
+      <DependentUpon>MainMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MainMenu.ascx.designer.cs">
+      <DependentUpon>MainMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MasterPage2.Master.cs">
+      <DependentUpon>MasterPage2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MasterPage2.Master.designer.cs">
+      <DependentUpon>MasterPage2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewsManage\Help.cs" />
+    <Compile Include="Admin\NewsManage\LeftMenu.ascx.cs">
+      <DependentUpon>LeftMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewsManage\LeftMenu.ascx.designer.cs">
+      <DependentUpon>LeftMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewsManage\NewsCheck.aspx.cs">
+      <DependentUpon>NewsCheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewsManage\NewsCheck.aspx.designer.cs">
+      <DependentUpon>NewsCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewsManage\NewsDetail.aspx.cs">
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewsManage\NewsDetail.aspx.designer.cs">
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewsManage\NewsEdit.aspx.cs">
+      <DependentUpon>NewsEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewsManage\NewsEdit.aspx.designer.cs">
+      <DependentUpon>NewsEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewsManage\NewsList.aspx.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewsManage\NewsList.aspx.designer.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewsManage\UserControl.ascx.cs">
+      <DependentUpon>UserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewsManage\ZipHelper.cs" />
+    <Compile Include="Admin\NoticeManage\LeftMenu.ascx.cs">
+      <DependentUpon>LeftMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NoticeManage\LeftMenu.ascx.designer.cs">
+      <DependentUpon>LeftMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NoticeManage\NoticeDetail.aspx.cs">
+      <DependentUpon>NoticeDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NoticeManage\NoticeDetail.aspx.designer.cs">
+      <DependentUpon>NoticeDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NoticeManage\NoticeEdit.aspx.cs">
+      <DependentUpon>NoticeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NoticeManage\NoticeEdit.aspx.designer.cs">
+      <DependentUpon>NoticeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NoticeManage\NoticeList.aspx.cs">
+      <DependentUpon>NoticeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NoticeManage\NoticeList.aspx.designer.cs">
+      <DependentUpon>NoticeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NoticeManage\UserControl.ascx.cs">
+      <DependentUpon>UserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\QuestionnaireManage\LeftMenu.ascx.cs">
+      <DependentUpon>LeftMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\QuestionnaireManage\LeftMenu.ascx.designer.cs">
+      <DependentUpon>LeftMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\QuestionnaireManage\QuestionnaireAccount.aspx.cs">
+      <DependentUpon>QuestionnaireAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\QuestionnaireManage\QuestionnaireAccount.aspx.designer.cs">
+      <DependentUpon>QuestionnaireAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\QuestionnaireManage\QuestionnaireDetail.aspx.cs">
+      <DependentUpon>QuestionnaireDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\QuestionnaireManage\QuestionnaireDetail.aspx.designer.cs">
+      <DependentUpon>QuestionnaireDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\QuestionnaireManage\QuestionnaireEdit.aspx.cs">
+      <DependentUpon>QuestionnaireEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\QuestionnaireManage\QuestionnaireEdit.aspx.designer.cs">
+      <DependentUpon>QuestionnaireEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\QuestionnaireManage\QuestionnaireList.aspx.cs">
+      <DependentUpon>QuestionnaireList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\QuestionnaireManage\QuestionnaireList.aspx.designer.cs">
+      <DependentUpon>QuestionnaireList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SystemManage\AddSubSysCode.aspx.cs">
+      <DependentUpon>AddSubSysCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SystemManage\AddSubSysCode.aspx.designer.cs">
+      <DependentUpon>AddSubSysCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SystemManage\AddSubSysCodeRelation.aspx.cs">
+      <DependentUpon>AddSubSysCodeRelation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SystemManage\AddSubSysCodeRelation.aspx.designer.cs">
+      <DependentUpon>AddSubSysCodeRelation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SystemManage\AddSysCode.aspx.cs">
+      <DependentUpon>AddSysCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SystemManage\AddSysCode.aspx.designer.cs">
+      <DependentUpon>AddSysCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SystemManage\AddSysUser.aspx.cs">
+      <DependentUpon>AddSysUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SystemManage\AddSysUser.aspx.designer.cs">
+      <DependentUpon>AddSysUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SystemManage\LeftMenu.ascx.cs">
+      <DependentUpon>LeftMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SystemManage\LeftMenu.ascx.designer.cs">
+      <DependentUpon>LeftMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SystemManage\SubSysCodeDetail.aspx.cs">
+      <DependentUpon>SubSysCodeDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SystemManage\SubSysCodeDetail.aspx.designer.cs">
+      <DependentUpon>SubSysCodeDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SystemManage\SubSysCodeList.aspx.cs">
+      <DependentUpon>SubSysCodeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SystemManage\SubSysCodeList.aspx.designer.cs">
+      <DependentUpon>SubSysCodeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SystemManage\SubSysCodeRelationList.aspx.cs">
+      <DependentUpon>SubSysCodeRelationList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SystemManage\SubSysCodeRelationList.aspx.designer.cs">
+      <DependentUpon>SubSysCodeRelationList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SystemManage\SysCodeDetail.aspx.cs">
+      <DependentUpon>SysCodeDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SystemManage\SysCodeDetail.aspx.designer.cs">
+      <DependentUpon>SysCodeDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SystemManage\SysCodeList.aspx.cs">
+      <DependentUpon>SysCodeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SystemManage\SysCodeList.aspx.designer.cs">
+      <DependentUpon>SysCodeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SystemManage\SysUserDetail.aspx.cs">
+      <DependentUpon>SysUserDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SystemManage\SysUserDetail.aspx.designer.cs">
+      <DependentUpon>SysUserDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SystemManage\SysUserList.aspx.cs">
+      <DependentUpon>SysUserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SystemManage\SysUserList.aspx.designer.cs">
+      <DependentUpon>SysUserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserBehaviorManage\LeftMenu.ascx.cs">
+      <DependentUpon>LeftMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserBehaviorManage\LeftMenu.ascx.designer.cs">
+      <DependentUpon>LeftMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserBehaviorManage\UserBehaviorDetail.aspx.cs">
+      <DependentUpon>UserBehaviorDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserBehaviorManage\UserBehaviorDetail.aspx.designer.cs">
+      <DependentUpon>UserBehaviorDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserBehaviorManage\UserBehaviorStatistics.aspx.cs">
+      <DependentUpon>UserBehaviorStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserBehaviorManage\UserBehaviorStatistics.aspx.designer.cs">
+      <DependentUpon>UserBehaviorStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Code\SessionEnduser.cs" />
+    <Compile Include="App_Code\SessionUser.cs" />
+    <Compile Include="Service References\MongoDBService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadEditor.Main.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadEditor.Main.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadEditor.Tools.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadEditor.Tools.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{342A174F-76C2-4DF6-BF5B-6135493622DC}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{E9285D5A-BBDC-4E78-81FC-9354577365EA}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{0C2DEC68-C653-4B4D-A060-C5696B882FA2}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataSyncService\DataSyncService.csproj">
+      <Project>{0D6E72C4-3186-4DF7-A153-1D06E822C46F}</Project>
+      <Name>DataSyncService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{76ED5A96-E579-4FEC-8502-C36B0B493B74}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interface\Interface.csproj">
+      <Project>{8E056247-6FBE-40EA-89E8-92ED9E631F2E}</Project>
+      <Name>Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{D1DE5C61-BD0F-4D60-9A53-FEE0573F1080}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\MasterPage.Master" />
+    <Content Include="Admin\MasterPage2.Master" />
+    <None Include="App_Data\RadSpell\de-DE.tdf" />
+    <None Include="App_Data\RadSpell\en-US.tdf" />
+    <None Include="App_Data\RadSpell\fr-FR.tdf" />
+    <Content Include="App_Themes\Black\Black.skin" />
+    <Content Include="App_Themes\Forest\Forest.skin" />
+    <Content Include="App_Themes\Metro\Metro.skin" />
+    <Content Include="App_Themes\Windows7\Windows7.skin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\RadEditor.Main.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadEditor.Main.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RadEditor.Tools.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadEditor.Tools.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\MongoDBService\" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <ProjectExtensions>
@@ -69,7 +728,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>62080</DevelopmentServerPort>
+          <DevelopmentServerPort>30375</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

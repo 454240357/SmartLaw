@@ -1,0 +1,17 @@
+D:\Git\SmartLaw\SmartLaw\SmartLaw\BLL\bin\Debug\SmartLaw.BLL.dll
+D:\Git\SmartLaw\SmartLaw\SmartLaw\BLL\bin\Debug\SmartLaw.BLL.pdb
+D:\Git\SmartLaw\SmartLaw\SmartLaw\BLL\bin\Debug\Model.dll
+D:\Git\SmartLaw\SmartLaw\SmartLaw\BLL\bin\Debug\MySql.Data.dll
+D:\Git\SmartLaw\SmartLaw\SmartLaw\BLL\bin\Debug\SmartLaw.Common.dll
+D:\Git\SmartLaw\SmartLaw\SmartLaw\BLL\bin\Debug\SmartLaw.DAL.dll
+D:\Git\SmartLaw\SmartLaw\SmartLaw\BLL\bin\Debug\OpenSmtp.dll
+D:\Git\SmartLaw\SmartLaw\SmartLaw\BLL\bin\Debug\SmartLaw.DBUtility.dll
+D:\Git\SmartLaw\SmartLaw\SmartLaw\BLL\bin\Debug\IBatisNet.DataMapper.dll
+D:\Git\SmartLaw\SmartLaw\SmartLaw\BLL\bin\Debug\IBatisNet.Common.dll
+D:\Git\SmartLaw\SmartLaw\SmartLaw\BLL\bin\Debug\SmartLaw.Common.pdb
+D:\Git\SmartLaw\SmartLaw\SmartLaw\BLL\bin\Debug\SmartLaw.DAL.pdb
+D:\Git\SmartLaw\SmartLaw\SmartLaw\BLL\bin\Debug\Model.pdb
+D:\Git\SmartLaw\SmartLaw\SmartLaw\BLL\bin\Debug\SmartLaw.DBUtility.pdb
+D:\Git\SmartLaw\SmartLaw\SmartLaw\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\Git\SmartLaw\SmartLaw\SmartLaw\BLL\obj\Debug\SmartLaw.BLL.dll
+D:\Git\SmartLaw\SmartLaw\SmartLaw\BLL\obj\Debug\SmartLaw.BLL.pdb
