@@ -1,13 +1,3 @@
-D:\Git\SmartLaw\SmartLaw\SmartLaw\Common\bin\Debug\SmartLaw.Common.dll
-D:\Git\SmartLaw\SmartLaw\SmartLaw\Common\bin\Debug\SmartLaw.Common.pdb
-D:\Git\SmartLaw\SmartLaw\SmartLaw\Common\bin\Debug\COM.Excel.dll
-D:\Git\SmartLaw\SmartLaw\SmartLaw\Common\bin\Debug\OpenSmtp.dll
-D:\Git\SmartLaw\SmartLaw\SmartLaw\Common\bin\Debug\OWC10Chart.dll
-D:\Git\SmartLaw\SmartLaw\SmartLaw\Common\obj\Debug\SmartLaw.Common.dll
-D:\Git\SmartLaw\SmartLaw\SmartLaw\Common\obj\Debug\SmartLaw.Common.pdb
-D:\Git\SmartLaw\SmartLaw\SmartLaw\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
-<<<<<<< HEAD
-=======
 C:\WorkSpace\SmartLaw\SmartLaw\Common\bin\Debug\SmartLaw.Common.dll
 C:\WorkSpace\SmartLaw\SmartLaw\Common\bin\Debug\SmartLaw.Common.pdb
 C:\WorkSpace\SmartLaw\SmartLaw\Common\bin\Debug\COM.Excel.dll
@@ -16,4 +6,3 @@ C:\WorkSpace\SmartLaw\SmartLaw\Common\bin\Debug\OWC10Chart.dll
 C:\WorkSpace\SmartLaw\SmartLaw\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
 C:\WorkSpace\SmartLaw\SmartLaw\Common\obj\Debug\SmartLaw.Common.dll
 C:\WorkSpace\SmartLaw\SmartLaw\Common\obj\Debug\SmartLaw.Common.pdb
->>>>>>> master
